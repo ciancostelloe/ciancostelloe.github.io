@@ -37,8 +37,8 @@
       context = getContext(iconWidth);
     context.fillText(content, (canvas.width - iconWidth) / 2, canvas.height / 2);
     link.setAttribute('rel', 'icon');
-    link.setAttribute('type', 'image/png');
-    link.setAttribute('href', canvas.toDataURL('image/png'));
+    link.setAttribute('type', 'assets/css/VIRC.png');
+    link.setAttribute('href', canvas.toDataURL('assets/css/VIRC.png'));
     for(var icons = document.querySelectorAll('link[rel*=icon]'), i = 0, l = icons.length; i < l; i++)
       icons[i].parentNode.removeChild(icons[i]);
     document.getElementsByTagName('head')[0].appendChild(link);
